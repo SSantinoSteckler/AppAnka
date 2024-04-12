@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicacion de Registro</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1>🚨TABLA DE CASAS ANKA FUMIGACIONES</h1>
+      <div id="div-inputs">
+        <form>
+          <label for="">Ingresar nombre</label>
+          <input type="text" id="input-name" placeholder="Nombre" />
+          <label for="">Ingresar Numero Lote</label>
+          <input type="number" id="input-number" placeholder="Numero de lote" />
+
+          <label for="">Transfiere/Efectivo</label>
+
+          <select id="input-select">
+            <option>Efectivo</option>
+            <option>Transfiere</option>
+            <option>No aclaro</option>
+          </select>
+          <label for="">Anotaciones</label>
+          <textarea
+            name="comentarios"
+            rows="10"
+            cols="40"
+            id="input-anotaciones"
+            placeholder="Aqui tus comentarios"
+          ></textarea>
+          <div>
+            <button id="button-add">Agregar</button>
+            <button id="button-delete">Borrar Tabla</button>
+            <button id="button-download-text">Descargar Texto</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="table-container">
+        <table class="custom-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Lote</th>
+              <th>Efectivo/Transferencia</th>
+              <th>Anotaciones</th>
+            </tr>
+          </thead>
+          <tbody id="div-table-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

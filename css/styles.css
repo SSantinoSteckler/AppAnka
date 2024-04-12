@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 30px;
+  background-color: gray;
+}
+
+#div-inputs form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  gap: 10px;
+  font-weight: bold;
+}
+
+#div-inputs form input {
+  width: 100%;
+  padding: 13px;
+}
+
+#div-inputs form select {
+  width: 100%;
+  padding: 13px;
+}
+
+#div-inputs form select option {
+  font-size: 1.2rem;
+}
+
+#div-inputs form textarea {
+  width: 100%;
+  padding: 13px;
+  resize: none;
+  height: 100px;
+}
+
+#div-inputs div {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+#div-inputs div button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+  border-radius: 10px;
+  width: 100%;
+}
+
+#div-inputs div button:first-child {
+  background-color: green;
+  color: white;
+}
+
+#div-inputs div button:nth-child(2) {
+  background-color: red;
+  color: white;
+}
+
+/* Div tabla */
+
+.table-container {
+  overflow-x: auto;
+  cursor: pointer;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px;
+  border: 3px solid #ddd;
+  background-color: white;
+}
+
+.custom-table tbody .highlighted td {
+  background-color: green;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+
+.custom-table button {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+}
+
+@media screen and (max-width: 600px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 14px;
+  }
+}
